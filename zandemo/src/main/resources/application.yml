@@ -1,0 +1,31 @@
+# Server settings  
+server:  
+    port: 8091
+    address: 0.0.0.0
+    servlet-path: /integration_backend
+    
+# SPRING PROFILES  
+spring:         
+    # HTTP ENCODING  
+    http:  
+        encoding.charset: UTF-8  
+        encoding.enable: true  
+        encoding.force: true  
+    mvc:
+        view.prefix: /WEB-INF/jsp/
+        view.suffix: .jsp
+
+    # DATASOURCE  
+    datasource:  
+        driverClass: com.mysql.jdbc.Driver  
+        #product
+        url: jdbc:mysql://localhost:3306/integration?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 1234
+  
+
+
+
+
+
+        
